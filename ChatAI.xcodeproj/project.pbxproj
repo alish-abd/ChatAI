@@ -14,6 +14,8 @@
 		38B61AB12980EFF3004A08DC /* ChatAI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38B61AAF2980EFF3004A08DC /* ChatAI.xcdatamodeld */; };
 		38B61AB32980EFF4004A08DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38B61AB22980EFF4004A08DC /* Assets.xcassets */; };
 		38B61AB62980EFF4004A08DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38B61AB42980EFF4004A08DC /* LaunchScreen.storyboard */; };
+		38B61ABF2980F059004A08DC /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 38B61ABE2980F059004A08DC /* OpenAISwift */; };
+		38B61AC12980F142004A08DC /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B61AC02980F142004A08DC /* APICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,7 @@
 		38B61AB22980EFF4004A08DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38B61AB52980EFF4004A08DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38B61AB72980EFF4004A08DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38B61AC02980F142004A08DC /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38B61ABF2980F059004A08DC /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +65,7 @@
 				38B61AA62980EFF3004A08DC /* AppDelegate.swift */,
 				38B61AA82980EFF3004A08DC /* SceneDelegate.swift */,
 				38B61AAA2980EFF3004A08DC /* ViewController.swift */,
+				38B61AC02980F142004A08DC /* APICaller.swift */,
 				38B61AAC2980EFF3004A08DC /* Main.storyboard */,
 				38B61AB22980EFF4004A08DC /* Assets.xcassets */,
 				38B61AB42980EFF4004A08DC /* LaunchScreen.storyboard */,
@@ -86,6 +91,9 @@
 			dependencies = (
 			);
 			name = ChatAI;
+			packageProductDependencies = (
+				38B61ABE2980F059004A08DC /* OpenAISwift */,
+			);
 			productName = ChatAI;
 			productReference = 38B61AA32980EFF3004A08DC /* ChatAI.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 38B61A9A2980EFF3004A08DC;
+			packageReferences = (
+				38B61ABD2980F059004A08DC /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = 38B61AA42980EFF3004A08DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,6 +155,7 @@
 				38B61AAB2980EFF3004A08DC /* ViewController.swift in Sources */,
 				38B61AB12980EFF3004A08DC /* ChatAI.xcdatamodeld in Sources */,
 				38B61AA72980EFF3004A08DC /* AppDelegate.swift in Sources */,
+				38B61AC12980F142004A08DC /* APICaller.swift in Sources */,
 				38B61AA92980EFF3004A08DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		38B61ABD2980F059004A08DC /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		38B61ABE2980F059004A08DC /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38B61ABD2980F059004A08DC /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		38B61AAF2980EFF3004A08DC /* ChatAI.xcdatamodeld */ = {
